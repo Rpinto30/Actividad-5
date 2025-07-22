@@ -11,7 +11,10 @@ while True:
         case '1':
             days = int(input("\n>Ingrese la cantidad de dias que desea ingresar: "))
             for i in range(days+1):
-                sale = int(input(f"Ingrese las ventas del días {i+1}: "))
+                while True:
+                    sale = int(input(f"Ingrese las ventas del días {i+1}: "))
+                    if sale > 0: break
+                    else: print("\nLo siento, numero negativo, intente de nuevo")
                 sales.append(sale)
             print("\nTodas las ventas han sido agregadas correctamente!")
         case '2':
@@ -33,5 +36,13 @@ while True:
             for i in sales:
                 if i > 1000: days_1000+=1
             print(f"\nLos días que superaron los Q1000 son {days_1000}")
+        case '6':
+            print("---Clasificación de ventas---")
+            for i in sales:
+                if i > 1000: print(f"Venta: {i}  Alta")
+                elif i >= 500: print(f"Venta: {i}  Media")
+                else: print(f"Venta: {i}  Baja")
 
+        case '7':
+            print("\nNos vemos")
         case _: print("Lo siento, no seleccionó ninguna opción, intente de nuevo")
