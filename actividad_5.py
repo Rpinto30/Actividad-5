@@ -1,4 +1,4 @@
-sales = []
+sales = [20,1,55,236,1,-1]
 
 while True:
     print("-"*10+"Bienvenido!"+"-"*10)
@@ -17,4 +17,14 @@ while True:
         case '2':
             print("-"*10+"Ventas ingresadas: ")
             for i,j in enumerate(sales): print(f"{i+1})  {j}")
+        case '3':
+            mayor = sales[0]
+            minus = sales[0]
+            for i in sales:
+                if i > mayor: mayor = i
+                if i < minus: minus = i
+
+            print(f"\nLa venta mayor resitrada es: {mayor}")
+            print(f"\nLa venta menor resitrada es: {minus}")
+
         case _: print("Lo siento, no seleccionó ninguna opción, intente de nuevo")
