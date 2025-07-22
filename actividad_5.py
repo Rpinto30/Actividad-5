@@ -1,4 +1,4 @@
-sales = [20,1,55,236,1,-1]
+sales = []
 
 while True:
     print("-"*10+"Bienvenido!"+"-"*10)
