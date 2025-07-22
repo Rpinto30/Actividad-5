@@ -26,5 +26,8 @@ while True:
 
             print(f"\nLa venta mayor resitrada es: {mayor}")
             print(f"\nLa venta menor resitrada es: {minus}")
+        case '4':
+            print(f"\n El promedio de ventas hasta el momento es: {sum(sales)/len(sales)}")
+        case '5'
 
         case _: print("Lo siento, no seleccionó ninguna opción, intente de nuevo")
