@@ -13,5 +13,8 @@ while True:
             for i in range(days+1):
                 sale = int(input(f"Ingrese las ventas del días {i+1}: "))
                 sales.append(sale)
-
+            print("\nTodas las ventas han sido agregadas correctamente!")
+        case '2':
+            print("-"*10+"Ventas ingresadas: ")
+            for i,j in enumerate(sales): print(f"{i+1})  {j}")
         case _: print("Lo siento, no seleccionó ninguna opción, intente de nuevo")
