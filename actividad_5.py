@@ -28,6 +28,10 @@ while True:
             print(f"\nLa venta menor resitrada es: {minus}")
         case '4':
             print(f"\n El promedio de ventas hasta el momento es: {sum(sales)/len(sales)}")
-        case '5'
+        case '5':
+            days_1000 = 0
+            for i in sales:
+                if i > 1000: days_1000+=1
+            print(f"\nLos días que superaron los Q1000 son {days_1000}")
 
         case _: print("Lo siento, no seleccionó ninguna opción, intente de nuevo")
